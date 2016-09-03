@@ -1,0 +1,104 @@
+{{ $baseurl := .Site.BaseURL }}
+{{ partial "header.html" . }}
+<!--
+    <div>
+      <h1>Get Started with AMP HTML</h1>
+    </div>
+-->
+<!-- <div class="tablet-up"> -->
+  <!-- <div class="card-container"> -->
+
+    <div class="card">
+      <div class="card__image">
+        <amp-youtube
+            height=315
+            width=560
+            layout=responsive
+            data-videoid="{{ .Params.videoid }}">
+        </amp-youtube>
+      </div>
+      <div class="card__content">
+        <h1 class="card__title"><a href="#">{{ .Title }}</a></h1>
+        <p>{{ .Content }}</p>
+        <p>
+          <amp-social-share type="twitter"
+              width="30"
+              height="24"> </amp-social-share>
+          <amp-social-share type="gplus"
+              width="30"
+              height="24"></amp-social-share>
+          <amp-social-share type="email"
+              width="30"
+              height="24"></amp-social-share>
+          <amp-social-share type="pinterest"
+              width="30"
+              height="24"></amp-social-share>
+          <amp-social-share type="linkedin"
+              width="30"
+              height="24"></amp-social-share>
+          <amp-social-share type="facebook"
+              width="30"
+              height="24"
+              data-param-app_id="254325784911610"></amp-social-share>
+        </p>
+        <p>{{ .Date.Format "Jan 2, 2006" }}</p>
+        <p>
+        {{ range .Params.tags }}
+          <a href="{{ $baseurl }}/tags/{{ . | urlize }}">#{{ . }}</a>
+        {{ end }}
+        </p>
+      </div>
+    </div>
+
+  <!-- </div> -->
+<!-- </div> -->
+<!--
+<div class="tablet-down">
+    <div class="card">
+      <div class="card__image">
+        <amp-youtube
+            height=315
+            width=560
+            layout=responsive
+            data-videoid="{{ .Params.videoid }}">
+        </amp-youtube>
+      </div>
+      <div class="card__content">
+        <h1 class="card__title"><a href="#">{{ .Title }}</a></h1>
+        <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+        <p>
+        {{ range .Params.tags }}
+          <a href="{{ $baseurl }}/tags/{{ . | urlize }}">#{{ . }}</a>
+        {{ end }}
+        </p>
+        <p>
+          <amp-social-share type="twitter"
+              width="30"
+              height="24"> </amp-social-share>
+          <amp-social-share type="gplus"
+              width="30"
+              height="24"></amp-social-share>
+          <amp-social-share type="email"
+              width="30"
+              height="24"></amp-social-share>
+          <amp-social-share type="pinterest"
+              width="30"
+              height="24"></amp-social-share>
+          <amp-social-share type="linkedin"
+              width="30"
+              height="24"></amp-social-share>
+          <amp-social-share type="facebook"
+              width="30"
+              height="24"
+              data-param-app_id="254325784911610"></amp-social-share>
+        </p>
+      </div>
+    </div>
+
+</div>
+-->
+  <div class="pagination">
+    {{ if .Prev }}<a class="prev" href="{{ .Prev.Permalink }}">{{ .Prev.Title }}</a>{{ else }}<a></a>{{ end }}
+    {{ if .Next }}<a class="next" href="{{ .Next.Permalink }}">{{ .Next.Title }}</a>{{ else }}<a></a>{{ end }}
+  </div>
+{{ partial "footer.html" . }}

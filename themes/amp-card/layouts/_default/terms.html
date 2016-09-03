@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+<!--
+    <div>
+      <h1>Get Started with AMP HTML</h1>
+    </div>
+-->
+<div class="tablet-up">
+  <div class="card-container">
+    {{ range $key,$value := .Data.Terms.ByCount }}
+      <div class="card">
+        <div class="card__action">
+          <a href="{{ $value.Name | urlize }}">{{ $value.Name }} ( {{ $value.Count }} )</a>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+</div>
+<div class="tablet-down">
+    {{ range $key,$value := .Data.Terms.ByCount }}
+      <div class="card">
+        <div class="card__action">
+          <a href="{{ $value.Name | urlize }}">{{ $value.Name }} ( {{ $value.Count }} )</a>
+        </div>
+      </div>
+    {{ end }}
+</div>
+{{ partial "footer.html" . }}

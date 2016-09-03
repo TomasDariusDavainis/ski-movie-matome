@@ -1,0 +1,21 @@
+{{ partial "header.html" . }}
+<!--
+    <div>
+      <h1>Get Started with AMP HTML</h1>
+    </div>
+-->
+{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+<div class="tablet-up">
+  <div class="card-container">
+    {{ range $paginator.Pages }}
+      {{ .Render "li" }}
+    {{ end }}
+  </div>
+</div>
+<div class="tablet-down">
+    {{ range $paginator.Pages }}
+      {{ .Render "li" }}
+    {{ end }}
+</div>
+{{ partial "pagination.html" $paginator }}
+{{ partial "footer.html" . }}

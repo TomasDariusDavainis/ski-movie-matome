@@ -1,0 +1,4 @@
+<div class="pagination">
+  {{ if .HasPrev }}<a class="prev" href="{{ .Prev.URL }}">Prev</a>{{ else }}<a></a>{{ end }}
+  {{ if .HasNext }}<a class="next" href="{{ .Next.URL }}">Next</a>{{ else }}<a></a>{{ end }}
+</div>

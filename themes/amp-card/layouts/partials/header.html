@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <!-- <meta property="og:description" content="The Accelerated Mobile Pages (AMP) Project is an open source initiative that makes it easy for publishers to create mobile-friendly content once and have it load instantly everywhere. – Accelerated Mobile Pages Project">
+  <meta name="description" content="The Accelerated Mobile Pages (AMP) Project is an open source initiative that makes it easy for publishers to create mobile-friendly content once and have it load instantly everywhere. – Accelerated Mobile Pages Project">
+ -->
+  <title>{{ .Title }}</title>
+  <!-- <link rel="shortcut icon" href="/static/img/amp_favicon.png"> -->
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- <link rel="manifest" href="/static/manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" sizes="120x120" href="/static/img/icons/120.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/static/img/icons/152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="/static/img/icons/167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icons/180.png">
+ -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700" rel="stylesheet" type="text/css">
+
+  {{ partial "css.html" . }}
+
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <!-- <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script> -->
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <!-- <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script> -->
+  <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+  <!-- <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script> -->
+  <!-- <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script> -->
+<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+</head><body class="home">
+<amp-analytics type="googleanalytics" id="analytics-ga">
+  <script type="application/json">
+  {
+    "vars": {
+      "account": "UA-67833617-1"
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+      }
+    }
+  }
+  </script>
+</amp-analytics>
+
+
+
+<amp-sidebar id='sidebar' side='right' layout='nodisplay'>
+
+<button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button>
+
+  <nav>
+<!--
+<div class="language desktop">
+  <amp-accordion>
+    <section>
+      <h6 class="current">
+        <a class="flag-en"><span>English</span></a>
+      </h6>
+      <div class="others">
+        <div>
+            <a href="/ar/" class="flag-ar"><span>العربية</span></a>
+        </div>
+        <div>
+            <a href="/es/" class="flag-es"><span>español</span></a>
+        </div>
+        <div>
+            <a href="/fr/" class="flag-fr"><span>français</span></a>
+        </div>
+        <div>
+            <a href="/id/" class="flag-id"><span>Indonesia</span></a>
+        </div>
+        <div>
+            <a href="/it/" class="flag-it"><span>italiano</span></a>
+        </div>
+        <div>
+            <a href="/ja/" class="flag-ja"><span>日本語</span></a>
+        </div>
+        <div>
+            <a href="/ko/" class="flag-ko"><span>한국어</span></a>
+        </div>
+        <div>
+            <a href="/nl/" class="flag-nl"><span>Nederlands</span></a>
+        </div>
+        <div>
+            <a href="/pl/" class="flag-pl"><span>polski</span></a>
+        </div>
+        <div>
+            <a href="/pt_br/" class="flag-pt_BR"><span>português</span></a>
+        </div>
+        <div>
+            <a href="/ru/" class="flag-ru"><span>русский</span></a>
+        </div>
+        <div>
+            <a href="/th/" class="flag-th"><span>ไทย</span></a>
+        </div>
+        <div>
+            <a href="/tr/" class="flag-tr"><span>Türkçe</span></a>
+        </div>
+        <div>
+            <a href="/zh_cn/" class="flag-zh_CN"><span>中文</span></a>
+        </div>
+      </div>
+    </section>
+  </amp-accordion>
+</div>
+-->
+
+    <ul>
+      <li>
+        <ul>
+<!--           <li class="is-active"><a href="/">Home</a></li>
+ -->
+        <li class=""><a href="/tags/">タグ</a></li>
+      </ul>
+      </li>
+    </ul>
+
+  </nav>
+
+</amp-sidebar>
+
+<header class="header fixed">
+  <div class="wrap">
+    <div class="container">
+      <div class="nav-container">
+         <div class="left-nav">
+            <a href="/" class="tab header-title">
+              <span>{{ .Site.Title }}</span>
+            </a>
+
+<!--               <div>
+    <amp-social-share type="twitter"
+        width="30"
+        height="24"> </amp-social-share>
+    <amp-social-share type="gplus"
+        width="30"
+        height="24"></amp-social-share>
+    <amp-social-share type="email"
+        width="30"
+        height="24"></amp-social-share>
+    <amp-social-share type="pinterest"
+        width="30"
+        height="24"></amp-social-share>
+    <amp-social-share type="linkedin"
+        width="30"
+        height="24"></amp-social-share>
+    <amp-social-share type="facebook"
+        width="30"
+        height="24"
+        data-param-app_id="254325784911610"></amp-social-share>
+  </div>
+ -->
+        </div>
+        <div class="right alt">
+
+          <a class="tab desktop " href="/tags/">
+            タグ
+          </a>
+<!--
+<div class="language desktop">
+  <amp-accordion>
+    <section>
+      <h6 class="current">
+        <a class="flag-en"><span>Social</span></a>
+      </h6>
+      <div class="others">
+        <div>
+    <amp-social-share type="twitter"
+        width="60"
+        height="44"> </amp-social-share>
+        </div>
+        <div>
+    <amp-social-share type="gplus"
+        width="60"
+        height="44"></amp-social-share>
+        </div>
+        <div>
+    <amp-social-share type="email"
+        width="60"
+        height="44"></amp-social-share>
+        </div>
+        <div>
+    <amp-social-share type="pinterest"
+        width="60"
+        height="44"></amp-social-share>
+        </div>
+        <div>
+    <amp-social-share type="linkedin"
+        width="60"
+        height="44"></amp-social-share>
+        </div>
+        <div>
+    <amp-social-share type="facebook"
+        width="60"
+        height="44"
+        data-param-app_id="254325784911610"></amp-social-share>
+        </div>
+      </div>
+    </section>
+  </amp-accordion>
+</div>
+-->
+          <button class="tab hamburger" id="menu-button" on='tap:sidebar.toggle'></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="content">
+
+<!--
+<section class="blade blade--hero hero">
+  <div class="container">
+    <div class="row">
+      <div class="six columns">
+        <div class="intro-container">
+          <h1>Instant. <br> Everywhere.</h1>
+          <p class="intro desktop-only">For many, reading on the mobile web is a slow, clunky and frustrating experience - but it doesn’t have to be that way. The Accelerated Mobile Pages (AMP) Project is an open source initiative that embodies the vision that publishers can create mobile optimized content once and have it load instantly everywhere.</p>
+          <p class="intro mobile-only">The Accelerated Mobile Pages (AMP) Project is an open initiative that embodies the vision that publishers can create mobile optimized content once and have it load instantly everywhere.</p>
+
+          <a on="tap:my-lightbox" class="watch-video" role="button">VIEW VIDEO</a>
+
+          <div class="mobile-only">
+            <a class="go-button go-button--alt" href="/docs/get_started/about-amp.html">
+              GET STARTED
+            </a>
+          </div>
+
+          <amp-lightbox id="my-lightbox" class="lightbox" layout="nodisplay" on="tap:my-lightbox.close" role="button" tabindex="1">
+
+            <div class="lightbox__container">
+
+              <amp-youtube
+                data-videoid="WrpkFROqR0Q"
+                layout="responsive"
+                width="480" height="270">
+              </amp-youtube>
+
+            </div>
+
+            <div class="lightbox__close" on="tap:my-lightbox.close" role="button" tabindex="1"></div>
+
+          </amp-lightbox>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+<section class="blade blade--get-started">
+  <div class="container">
