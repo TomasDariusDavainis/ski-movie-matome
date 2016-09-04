@@ -791,6 +791,7 @@
     nav ol li ul li,
     nav ul li ol li,
     nav ul li ul li {
+        padding-top: 14px;
         margin-bottom: 6px;
         font-size: 14px;
         list-style: square;
@@ -2475,5 +2476,8 @@
             width: auto;
         }
     }
-    .pagination{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap}.pagination .prev{padding:10px 0 10px 20px;background-image:url("{{ $.Site.BaseURL }}images/chevron-left.svg");background-position:left;background-repeat:no-repeat;background-size:18px 18px}.pagination .next{padding:10px 20px 10px 0;background-image:url("{{ $.Site.BaseURL }}images/chevron-right.svg");background-position:right;background-repeat:no-repeat;background-size:18px 18px}
+    .pagination{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-ms-flex-wrap:wrap;flex-wrap:wrap}
+    .pagination .prev{padding:10px 0 10px 20px;background-image:url("{{ $.Site.BaseURL }}images/chevron-left.svg");background-position:left;background-repeat:no-repeat;background-size:18px 18px}
+    .pagination .number{padding:10px 0 10px 0;}
+    .pagination .next{padding:10px 20px 10px 0;background-image:url("{{ $.Site.BaseURL }}images/chevron-right.svg");background-position:right;background-repeat:no-repeat;background-size:18px 18px}
 </style>

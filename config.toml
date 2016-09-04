@@ -1,10 +1,8 @@
 theme = "amp-card"
-baseurl = "http://pdevty.github.io/ski-movie-matome"
+baseurl = "http://pdevty.github.io/ski-movie-matome/"
 title = "Youtubeスキー動画まとめ"
 author = "pdevty"
 copyright = "&copy; 2016"
 canonifyurls = true
+googleAnalytics="UA-83661025-1"
 paginate = 18
-
-[params]
-  googleAnalyticsUserID="UA-67833XXX-X" # optional
